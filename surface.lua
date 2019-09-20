@@ -44,7 +44,6 @@ end
 
 function surface.DrawTexturedRectRotated( x, y, w, h, ang )
   local iw, ih = next_draw:getDimensions()
-  love.graphics.rectangle( "fill", x, y, w, h )
   love.graphics.draw( next_draw, x + w/2, y + h/2, ang, w/iw, h/ih, iw/2, ih/2 )
 end
 
