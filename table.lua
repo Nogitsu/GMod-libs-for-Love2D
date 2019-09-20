@@ -91,15 +91,3 @@ function table.RemoveByValue( tab, value )
         end
     end
 end
-
-function table.UnpackPoints( tab )
-    local points = {}
-
-    for _, v in pairs( tab ) do
-        local x, y = v:Expose()
-        points[#points + 1] = x
-        points[#points + 1] = y
-    end
-
-    return unpack( points )
-end
