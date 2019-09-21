@@ -12,10 +12,11 @@ end
 --  > Color funcs
 local draw_r, draw_g, draw_b, draw_a = 255, 255, 255, 255
 function surface.SetDrawColor( r, g, b, a )
-  text_r = r or 255
-  text_g = g or 255
-  text_b = b or 255
-  text_a = a or 255
+  draw_r = r or 255
+  draw_g = g or 255
+  draw_b = b or 255
+  draw_a = a or 255
+  love.graphics.setColor( draw_r / 255, draw_g / 255, draw_b / 255, draw_a / 255 )
 end
 
 function surface.GetDrawColor()
