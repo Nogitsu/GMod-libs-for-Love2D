@@ -73,6 +73,10 @@ function surface.DrawRect( x, y, w, h )
   love.graphics.rectangle( "fill", x, y, w, h )
 end
 
+function surface.DrawPixel( x, y )
+  surface.DrawRect( x, y, 1, 1 )
+end
+
 function surface.DrawOutlinedRect( x, y, w, h )
   love.graphics.rectangle( "line", x, y, w, h )
 end
